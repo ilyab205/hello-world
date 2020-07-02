@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Головна сторінка</title>
+    <meta charset="utf-8">
+    <meta name="viemport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/CSS/main.css">
+    <link rel="stylesheet" href="static/CSS/media.css">
+</head>
+<body>
+    <header>Ласкаво просимо до сайту 9-б класу 69 школи м. Києва!!</header>
+    <div id="urls" class="bordered">
+    <div class="url"><a href="news.html">Новини</a></div>
+    <div class="url"><a href="gallery.html">Галерея</a></div>
+    <div class="url"><a href="rate.html">Рейтинг учнів</a></div>
+    <div class="url"><a href="domashka.html">Домашні завдання</a></div>
+    <div class="url"><a href="zvonki.html">Розклад дзвінків</a></div>
+    </div>
+    <div id="main">
+        <p>Останні новини:</p>
+        <h1 id="clock">00:00:00</h1>
+    <script>
+    var clock = document.getElementById('clock');
+    
+    function clockTime(){
+        var
+          time = new Date,
+          h = time.getHours().toString(),
+          m = time.getMinutes().toString(),
+          s = time.getSeconds().toString();
+        
+        if(h.length<2){h = '0' + h;}
+        if(m.length<2){m = '0' + m;}
+        if(s.length<2){s = '0' + s;}
+        
+        var clockString = h + ':' + m + ':' + s;
+        clock.textContent = clockString;      
+    }
+    
+    setInterval(clockTime, 1000);
+    </script>
+    <center>
+        <div class="uvaga">
+        <h1>Увага!</h1>
+        <h3>Канікули!</h3></div>
+        <p class="text">Ви потрапили до сайту Іллі Балашова - учня 9-Б класу!У цьому сайті ви можете дізнатись про домашні завдання,прочитати свіжі новини і переглянути рейтинг учнів.</p><p class="blue">Гарного вам настрою!!!</p>
+    </center>
+    </div>
+</body>
+</html>

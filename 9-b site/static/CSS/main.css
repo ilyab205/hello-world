@@ -1,0 +1,362 @@
+body {
+    background-image:url(img/881287.jpg);
+    background-size: cover;
+    cursor: default;
+}
+
+header {
+    font-style: italic;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.url {
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+#urls {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    flex-direction: row;
+       
+}
+
+.bordered {
+    width: 1320px;
+    height: 50px;
+    margin: 0px;
+    background: rgba(47, 255, 3,  0.5);
+    border: 2px solid #000;
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+    font-size: 2vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 1150px;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 2.5vw;
+    top: 55%;
+    left: 25%;
+}
+
+p {
+    font-style: italic;
+    font-family: sans-serif;
+    color: darkred;
+    position: absolute;
+    font-size: 4vw;
+    top: 5%;
+}
+
+.uvaga {
+    font-family: sans-serif;
+    color: yellow;
+    position: absolute;
+    top: 15%;
+    right: 45%;
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+    border: 3px solid #FFFF00;
+}
+
+#newsborder {
+    position: absolute;
+    display: flex;
+    width: 98%;
+    bottom: 2%;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 2.5vw;
+    top: 10%;  
+}
+
+#galleryborder {
+    position: absolute;
+    display: flex;
+    width: 98%;
+    bottom: 2%;
+    margin: 0px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 2.5vw;
+    top: 10%;  
+}
+
+table {
+    font-family: sans-serif;
+    background: #000;
+    border: 15px solid #000;
+    border-radius: 3vw;
+    color: black;
+}
+
+tr {
+    background: #00BFFF;
+}
+
+img {
+    width: 300px;
+    height: 350px;
+}
+
+p.text {
+    top: 35%;
+    font-style: normal;
+    font-family: sans-serif;
+    font-size: 2vw;
+    color: black;
+    right: 5%;
+}
+
+p.blue {
+    top: 50%;
+    right: 10%;
+    font-style: normal;
+    font-family: sans-serif;
+    color: blue;
+}
+
+.calendar { 
+    width: 300px;
+    height: auto;
+    margin: 200px 10px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.calendar .image {
+    width: 100%;
+    height: 200px;
+    background: url(img/osen.jpg);
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calendar .image h2,
+.calendar .image h3 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.2);
+}
+
+.calendar .image h3 {
+    font-weight: 500;
+}
+
+.calendar .date {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.calendar .date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: #262626;
+}
+
+
+.calendar .date div.day {
+    font-weight: 700;
+}
+
+.calendar .date div.day:first-child,
+.calendar .date div.number:nth-child(7n + 1) {
+    color: #ff685d;
+    font-weight: 700;
+}
+
+.calendar .date div.number.active,
+.calendar .date div.number:hover {
+    background: #009688;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#clock {
+    margin: 50px;
+    font-family: sans-serif;
+}
+
+
+
+
+/* ...............................
+
+
+       MEDIA
+
+
+............................... */
+/* При максимальной ширине экрана в 1160px - будет выполнен медиазапрос */
+@media (max-width: 1160px) {
+    body {
+        background-image: url(img/881287.jpg);
+        background-size: cover;
+        cursor: default;
+    }
+
+      .bordered {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 25%;
+        top: 30%;
+        right: 0%;
+    
+  }
+
+      #main {
+        width: 95%;
+        height: 150%;
+        top: 1000px;
+        left: 2%;
+        margin: 0px;
+        padding: 0px;
+  }
+
+     header {
+       font-style: italic;
+       font-size: 7.3vw;
+  }
+
+    p {
+        font-size: 9vw;
+        top: 5%;
+  }
+
+    .url {
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 5vw;
+    
+  }
+    
+     #newsborder {
+        width: 95%;
+        height: 100%;
+        top: 10%;
+        left: 2%;
+        margin: 0px;
+        padding: 0px;
+  }
+    
+     #galleryborder {
+        width: 95%;
+        height: 100%;
+        top: 10%;
+        left: 2%;
+        margin: 0px;
+        padding: 0px;
+  }
+
+    .uvaga {
+      display: block;
+      position: absolute;
+      font-size: 5vw;
+      width: 50%;
+      top: 15%;
+      right: 20%;
+      align-self: center;
+  }
+
+    #urls {
+      display: block;
+      position: absolute;
+      vertical-align: top;
+      justify-content: space-between;
+  }
+
+    table {
+      font-family: sans-serif;
+      background: #000;
+      border: 15px solid #000;
+      border-radius: 3vw;
+      color: black;
+      font-size: 3vw;
+  }
+
+    tr {
+      background: #00BFFF;
+   }
+
+img {
+    width: 100%;
+}
+
+.homenbord {
+    display: block;
+      position: absolute;
+      vertical-align: top;
+      justify-content: space-between;
+}
+
+    p.text {
+        top: 35%;
+        font-size: 5vw;
+        font-style: normal;
+        font-family: sans-serif;
+        color: black;
+        right: 5%;
+    }
+    
+    p.blue {
+        top: 50%;
+    }
+    
+    .calendar {
+        margin: 500px 75px;
+    }
+    
+    .calendar .date div.day {
+      font-size: 4vw;
+      font-weight: 700;
+   }
+    
+    .calendar .date div.number {
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    
+    .calendar .image h2,
+    .calendar .image h3 {
+     font-size: 4vw;
+   }
+
+    .calendar .image h3 {
+      font-weight: 500;
+   }
+    
+    .clock {
+        margin: 500px;
+    }
+    
+}
